@@ -41,10 +41,11 @@ jobs:
 
       # Tag docker image
       - name: Tag Docker Image
-        run: docker tag static-web ghcr.io/${{ github.actor }}/static-web:latest
+        run: docker tag static-web ghcr.io/iftanafinayet/static-web:latest
 
       - name: Push Docker Image
-        run: docker push ghcr.io/${{ github.actor }}/static-web:latest
+        run: docker push ghcr.io/iftanafinayet/static-web:latest
+
 
 
       # ----------------------
