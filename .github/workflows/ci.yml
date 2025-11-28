@@ -1,0 +1,67 @@
+name: CI/CD Pipeline - Static Web
+
+on:
+  push:
+    branches: ["main"]
+  pull_request:
+    branches: ["main"]
+
+jobs:
+  build-test-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      # ----------------------
+      # 1. Checkout Repo
+      # ----------------------
+      - name: Checkout Code
+        uses: actions/checkout@v3
+
+      # ----------------------
+      # 2. Setup Node.js (Linting)
+      # ----------------------
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 18
+
+      # Install linting packages
+      - name: Install Linting Tools
+        run: |
+          npm install htmlhint stylelint stylelint-config-standard
+
+      # Run HTML Linter
+      - name: Run HTMLHint
+        run: npx htmlhint .
+
+      # Run CSS Linter
+      - name: Run Stylelint
+        run: npx stylelint "assets/css/**/*.css"
+
+      # ----------------------
+      # 3. Build Docker Image
+      # ----------------------
+      - name: Build Docker Image
+        run: docker build -t static-web .
+
+      # ----------------------
+      # 4. Login ke GitHub Container Registry
+      # ----------------------
+      - name: Login to GHCR
+        run: echo "${{ secrets.GHCR_TOKEN }}" | docker login ghcr.io -u ${{ github.actor }} --password-stdin
+
+      # Tag docker image
+      - name: Tag Docker Image
+        run: docker tag static-web ghcr.io/${{ github.repository }}/static-web:latest
+
+      # Push image ke GHCR
+      - name: Push Docker Image
+        run: docker push ghcr.io/${{ github.repository }}/static-web:latest
+
+      # ----------------------
+      # 5. (Opsional) Trigger deploy ke Railway/Render
+      # ----------------------
+      - name: Deployment Webhook (Optional)
+        if: always()
+        run: |
+          curl -X POST "${{ secrets.DEPLOY_WEBHOOK_URL }}" || true
