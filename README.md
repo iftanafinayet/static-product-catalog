@@ -2,7 +2,6 @@
 
 Small static website demonstrating a product catalog and product detail pages for a hypothetical packaging business.
 
-<<<<<<< HEAD
 =======
 ## ⚙️ Setup Instructions
 1. Clone this repository:
