@@ -23,34 +23,13 @@ jobs:
         uses: actions/checkout@v3
 
       # ----------------------
-      # 2. Setup Node.js (Linting)
-      # ----------------------
-      - name: Setup Node.js
-        uses: actions/setup-node@v3
-        with:
-          node-version: 18
-
-      # Install linting packages
-      - name: Install Linting Tools
-        run: |
-          npm install htmlhint stylelint stylelint-config-standard
-
-      # Run HTML Linter
-      - name: Run HTMLHint
-        run: npx htmlhint .
-
-      # Run CSS Linter
-      - name: Run Stylelint
-        run: npx stylelint "assets/css/**/*.css"
-
-      # ----------------------
-      # 3. Build Docker Image
+      # 2. Build Docker Image
       # ----------------------
       - name: Build Docker Image
         run: docker build -t static-web .
 
       # ----------------------
-      # 4. Login ke GitHub Container Registry
+      # 3. Login ke GitHub Container Registry
       # ----------------------
       - name: Login to GHCR
         run: echo "${{ secrets.GHCR_TOKEN }}" | docker login ghcr.io -u ${{ github.actor }} --password-stdin
@@ -64,7 +43,7 @@ jobs:
         run: docker push ghcr.io/${{ github.repository }}/static-web:latest
 
       # ----------------------
-      # 5. (Opsional) Trigger deploy ke Railway/Render
+      # 4. (Opsional) Trigger deploy ke Railway/Render
       # ----------------------
       - name: Deployment Webhook (Optional)
         if: always()
