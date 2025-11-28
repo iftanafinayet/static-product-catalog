@@ -41,11 +41,11 @@ jobs:
 
       # Tag docker image
       - name: Tag Docker Image
-        run: docker tag static-web ghcr.io/${{ github.repository }}/static-web:latest
+        run: docker tag static-web ghcr.io/${{ github.actor }}/static-web:latest
 
-      # Push image ke GHCR
       - name: Push Docker Image
-        run: docker push ghcr.io/${{ github.repository }}/static-web:latest
+        run: docker push ghcr.io/${{ github.actor }}/static-web:latest
+
 
       # ----------------------
       # 4. (Opsional) Trigger deploy ke Railway/Render
