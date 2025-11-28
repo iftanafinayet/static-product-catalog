@@ -75,6 +75,12 @@ nav a{
 a:focus{outline:3px solid rgb(var(--accent-rgb) 0.14); outline-offset:2px}
 
 /* footer links moved here so their class-based selector comes before nav a:hover (avoids descending-specificity) */
+
+nav a:hover{
+  color:var(--accent-2);
+  background:rgb(var(--accent-rgb) 0.06);
+}
+
 .footer-nav a{
   color:var(--accent-2);
   text-decoration:none;
@@ -82,11 +88,6 @@ a:focus{outline:3px solid rgb(var(--accent-rgb) 0.14); outline-offset:2px}
   display:flex;
   flex-direction:column;
   gap:8px;
-}
-
-nav a:hover{
-  color:var(--accent-2);
-  background:rgb(var(--accent-rgb) 0.06);
 }
 
 .hero{
