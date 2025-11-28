@@ -7,7 +7,7 @@ Small static website demonstrating a product catalog and product detail pages fo
 ## ⚙️ Setup Instructions
 1. Clone this repository:
    ```bash
-   git clone https://github.com/iftanafinayet/static-portfolio-devops.git
+   git clone https://github.com/iftanafinayet/static-product-catalog.git
 
 >>>>>>> 06f62e891a2eeb5e8465fc041c0dc39048b45274
 ## Features
@@ -54,3 +54,4 @@ If a product id is missing or not found, the page falls back to the first produc
 
 ## License
 This project is example/demo code and may be reused freely for learning and prototyping.
+update
