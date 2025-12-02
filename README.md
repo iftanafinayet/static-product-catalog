@@ -2,14 +2,12 @@
 
 Small static website demonstrating a product catalog and product detail pages for a hypothetical packaging business.
 
-<<<<<<< HEAD
-=======
+
 ## ⚙️ Setup Instructions
 1. Clone this repository:
    ```bash
    git clone https://github.com/iftanafinayet/static-product-catalog.git
 
->>>>>>> 06f62e891a2eeb5e8465fc041c0dc39048b45274
 ## Features
 - Home page with hero, slider, highlighted products and CTA
 - Products listing page with product cards
