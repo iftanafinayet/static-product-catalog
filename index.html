@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/assets/css/index.css">
+    <title>UKM Kemasan - Landing Page</title>
+</head>
+<body>
+    <header>
+        <h1 class="logo">UKM Kemasan</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Product</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <!-- Sliding banner -->
+        <div class="slider" aria-roledescription="carousel">
+            <div class="slides">
+                <div class="slide" data-index="0">
+                    <img src="/assets/img/banner-print.png" alt="Banner print product">
+                </div>
+                <div class="slide" data-index="1">
+                    <img src="/assets/img/banner-sablon.png" alt="Banner sablon product">
+                </div>
+            </div>
+            <button class="slider-btn prev" aria-label="Previous slide">‹</button>
+            <button class="slider-btn next" aria-label="Next slide">›</button>
+            <div class="slider-dots" role="tablist" aria-label="Slide indicators"></div>
+        </div>
+
+        <div class="hero-content">
+            <h2>Welcome to UKM Kemasan</h2>
+            <p>Your Packaging Solution.</p>
+            <a href="about.html" class="btn">Learn More</a>
+        </div>
+    </section>
+
+    <!-- Short description -->
+    <section class="short-desc container" aria-label="Short description">
+        <p>
+            UKM Kemasan menyediakan solusi kemasan profesional untuk berbagai kebutuhan usaha Anda — dari standing pouch,
+            flat bottom hingga vacuum packaging. Kualitas, fleksibilitas, dan desain menjadi prioritas kami.
+        </p>
+    </section>
+
+    <!-- Highlighted products -->
+    <section class="highlighted-products container" aria-labelledby="highlighted-products-title">
+        <h3 id="highlighted-products-title">Highlighted Products</h3>
+        <div class="highlight-grid">
+            <article class="highlight-card">
+                <img src="/assets/img/fb-hologram.png" alt="Flat Bottom packaging sample">
+                <h4>Flat Bottom</h4>
+                <p>Desain yang stabil dan kapasitas besar — pilihan ideal untuk produk berat.</p>
+                <a href="product-detail.html" class="card-link">View details</a>
+            </article>
+            <article class="highlight-card">
+                <img src="/assets/img/stp-alu.png" alt="Standing pouch packaging sample">
+                <h4>Standing Pouch</h4>
+                <p>Fleksibel dan menarik, cocok untuk produk makanan dan minuman.</p>
+                <a href="product-detail.html" class="card-link">View details</a>
+            </article>
+            <article class="highlight-card">
+                <img src="/assets/img/vacuum.png" alt="Vacuum packaging sample">
+                <h4>Vacuum Packaging</h4>
+                <p>Maksimalkan umur simpan produk dengan teknologi vacuum kami.</p>
+                <a href="product-detail.html" class="card-link">View details</a>
+            </article>
+        </div>
+
+        <div class="products-cta">
+            <a class="btn" href="products.html">See all products</a>
+        </div>
+    </section>
+    
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <div class="footer-brand">
+                <h4>UKM Kemasan</h4>
+                <p class="muted">Solusi kemasan profesional untuk usaha kecil dan menengah.</p>
+            </div>
+
+            <nav class="footer-nav" aria-label="Footer">
+                <a href="index.html">Home</a>
+                <a href="products.html">Products</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+
+            <div class="footer-contact">
+                <p><strong>Tel:</strong> <a href="tel:+621234567890">+62 12 3456 7890</a></p>
+                <p><strong>Email:</strong> <a href="mailto:info@ukmkemasan.example">info@ukmkemasan.example</a></p>
+                <div class="footer-social">
+                    <a class="social-link" href="https://instagram.com/yourhandle" target="_blank" rel="noopener noreferrer">IG</a>
+                    <a class="social-link" href="https://facebook.com/yourpage" target="_blank" rel="noopener noreferrer">FB</a>
+                    <a class="social-link" href="https://wa.me/621234567890" target="_blank" rel="noopener noreferrer">WA</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">© <span id="year">2025</span> UKM Kemasan. All rights reserved.</div>
+        </div>
+    </footer>
+    
+</body>
+    <script src="/assets/js/slider.js" defer></script>
+</html>

@@ -1,0 +1,119 @@
+{
+  "products": [
+    {
+      "id": "flat-bottom",
+      "title": "Flat Bottom Packaging",
+      "price_note": "Mulai dari Rp 1.250 / pcs",
+      "price_sub": "(Harga estimasi untuk MOQ 500, tergantung ukuran & finishing)",
+      "short_desc": "Standing pouch flat-bottom, desain stabil dengan pilihan finishing yang dapat disesuaikan — ideal untuk makanan, kopi, bumbu, dan produk kering lainnya.",
+      "specs": {
+        "Material": "Laminated BOPP / PET + PE (food-grade)",
+        "Finishing": "Gloss, Matte, Holographic, Sablon UV, Zipper",
+        "Ukuran umum": "Custom (contoh: 12 x 20 cm, 15 x 25 cm)",
+        "Minimum Order": "500 pcs",
+        "Lead time": "10–14 hari kerja (setelah artwork & DP diterima)",
+        "Pengemasan": "Packing rapi per box, label pengiriman tersedia"
+      },
+      "images": [
+        "/assets/img/fb-hologram.png",
+        "/assets/img/fb-hologram.png",
+        "/assets/img/fb-hologram.png"
+      ]
+    },
+    {
+      "id": "standing-pouch",
+      "title": "Standing Pouch",
+      "price_note": "Mulai dari Rp 1.000 / pcs",
+      "price_sub": "(Estimasi untuk MOQ 1000, variasi ukuran tersedia)",
+      "short_desc": "Standing pouch serbaguna cocok untuk snack, bahan kering, dan cairan dengan opsi zipper.",
+      "specs": {
+        "Material": "PET/PE, kraft laminated",
+        "Finishing": "Gloss, Matte, Window",
+        "Ukuran umum": "10 x 15 cm, 12 x 18 cm",
+        "Minimum Order": "1000 pcs",
+        "Lead time": "12–18 hari kerja",
+        "Pengemasan": "Bulk packing per karton"
+      },
+      "images": [
+        "/assets/img/stp-alu.png",
+        "/assets/img/stp-alu.png"
+      ]
+    },
+    {
+      "id": "vacuum-packaging",
+      "title": "Vacuum Packaging",
+      "price_note": "Mulai dari Rp 1.500 / pcs",
+      "price_sub": "(Estimasi untuk MOQ 500, tergantung ukuran & material)",
+      "short_desc": "Kemasan vacuum untuk menjaga kesegaran produk, ideal untuk produk yang sensitif terhadap udara dan kelembapan.",
+      "specs": {
+        "Material": "Aluminium laminated / PET + PE",
+        "Finishing": "Gloss, Matte",
+        "Ukuran umum": "Custom",
+        "Minimum Order": "500 pcs",
+        "Lead time": "10–16 hari kerja",
+        "Pengemasan": "Individu / box sesuai permintaan"
+      },
+      "images": [
+        "/assets/img/vacuum.png",
+        "/assets/img/vacuum.png"
+      ]
+    },
+    {
+      "id": "zipper-pouch",
+      "title": "Zipper Pouch",
+      "price_note": "Mulai dari Rp 900 / pcs",
+      "price_sub": "(Estimasi untuk MOQ 1000, variasi ukuran tersedia)",
+      "short_desc": "Pouch dengan zipper yang dapat dibuka-tutup, cocok untuk produk konsumsi dan snack.",
+      "specs": {
+        "Material": "PET/PE, Laminated",
+        "Finishing": "Gloss, Matte, Zipper",
+        "Ukuran umum": "8 x 12 cm, 10 x 15 cm",
+        "Minimum Order": "1000 pcs",
+        "Lead time": "10–14 hari kerja",
+        "Pengemasan": "Bulk per karton"
+      },
+      "images": [
+        "/assets/img/stp-alu.png",
+        "/assets/img/stp-alu.png"
+      ]
+    },
+    {
+      "id": "kraft-pouch",
+      "title": "Kraft Paper Pouch",
+      "price_note": "Mulai dari Rp 950 / pcs",
+      "price_sub": "(Estimasi untuk MOQ 500, cocok untuk produk organik)",
+      "short_desc": "Kraft paper pouch ramah lingkungan dengan opsi window untuk menampilkan isi produk.",
+      "specs": {
+        "Material": "Kraft laminated",
+        "Finishing": "Matte, Window",
+        "Ukuran umum": "Custom",
+        "Minimum Order": "500 pcs",
+        "Lead time": "12–18 hari kerja",
+        "Pengemasan": "Bulk per karton"
+      },
+      "images": [
+        "/assets/img/fb-hologram.png",
+        "/assets/img/fb-hologram.png"
+      ]
+    },
+    {
+      "id": "roll-stock",
+      "title": "Roll Stock Film",
+      "price_note": "Mulai dari Rp 8.000 / meter",
+      "price_sub": "(Estimasi untuk pemesanan roll, harga tergantung ketebalan dan material)",
+      "short_desc": "Film roll stock untuk mesin pengemasan; tersedia dalam berbagai material dan ketebalan.",
+      "specs": {
+        "Material": "BOPP, PET, CPP",
+        "Finishing": "Gloss, Matte",
+        "Ukuran umum": "Lebar custom, roll panjang sesuai permintaan",
+        "Minimum Order": "Roll",
+        "Lead time": "14–21 hari kerja",
+        "Pengemasan": "Roll di pallet"
+      },
+      "images": [
+        "/assets/img/vacuum.png",
+        "/assets/img/vacuum.png"
+      ]
+    }
+  ]
+}

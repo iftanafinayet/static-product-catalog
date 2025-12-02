@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/assets/css/index.css">
+    <link rel="stylesheet" href="/assets/css/product-detail.css">
+    <title>Product Detail - UKM Kemasan</title>
+</head>
+<body>
+    <header>
+        <h1 class="logo">UKM Kemasan</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Product</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        <section class="product-detail" aria-labelledby="product-title" style="margin:28px 0;">
+            <div class="product-layout">
+                <div class="gallery">
+                    <div class="main-image">
+                        <img id="mainImage" src="/assets/img/fb-hologram.png" alt="Flat Bottom Packaging - sample">
+                    </div>
+                    <div class="thumbnails" role="tablist" aria-label="Product image thumbnails">
+                        <button class="thumb active" data-src="/assets/img/fb-hologram.png" aria-label="Image 1" role="tab">
+                            <img src="/assets/img/fb-hologram.png" alt="thumbnail 1">
+                        </button>
+                        <button class="thumb" data-src="/assets/img/fb-hologram.png" aria-label="Image 2" role="tab">
+                            <img src="/assets/img/fb-hologram.png" alt="thumbnail 2">
+                        </button>
+                        <button class="thumb" data-src="/assets/img/fb-hologram.png" aria-label="Image 3" role="tab">
+                            <img src="/assets/img/fb-hologram.png" alt="thumbnail 3">
+                        </button>
+                    </div>
+                </div>
+
+                <aside class="info">
+                    <h2 id="product-title">Flat Bottom Packaging</h2>
+                    <p class="price">Mulai dari Rp 1.250 / pcs <small style="display:block;color:var(--muted);font-weight:600">(Harga estimasi untuk MOQ 500, tergantung ukuran & finishing)</small></p>
+                    <p class="short-desc">Standing pouch flat-bottom, desain stabil dengan pilihan finishing yang dapat disesuaikan — ideal untuk makanan, kopi, bumbu, dan produk kering lainnya.</p>
+
+                    <ul class="specs">
+                        <li><strong>Material:</strong> Laminated BOPP / PET + PE (food-grade)</li>
+                        <li><strong>Finishing:</strong> Gloss, Matte, Holographic, Sablon UV, Zipper</li>
+                        <li><strong>Ukuran umum:</strong> Custom (contoh: 12 x 20 cm, 15 x 25 cm)</li>
+                        <li><strong>Minimum Order:</strong> 500 pcs</li>
+                        <li><strong>Lead time:</strong> 10–14 hari kerja (setelah artwork & DP diterima)</li>
+                        <li><strong>Pengemasan:</strong> Packing rapi per box, label pengiriman tersedia</li>
+                    </ul>
+
+                    <div class="actions">
+                        <a class="btn" href="contact.html">Hubungi untuk Pemesanan</a>
+                        <a class="btn outline" href="products.html">Kembali ke Produk</a>
+                    </div>
+                </aside>
+            </div>
+        </section>
+    </main>
+
+    <script src="/assets/js/product-detail.js" defer></script>
+</body>
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <div class="footer-brand">
+                <h4>UKM Kemasan</h4>
+                <p class="muted">Solusi kemasan profesional untuk usaha kecil dan menengah.</p>
+            </div>
+
+            <nav class="footer-nav" aria-label="Footer">
+                <a href="index.html">Home</a>
+                <a href="products.html">Products</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+
+            <div class="footer-contact">
+                <p><strong>Tel:</strong> <a href="tel:+621234567890">+62 12 3456 7890</a></p>
+                <p><strong>Email:</strong> <a href="mailto:info@ukmkemasan.example">info@ukmkemasan.example</a></p>
+                <div class="footer-social">
+                    <a class="social-link" href="https://instagram.com/yourhandle" target="_blank" rel="noopener noreferrer">IG</a>
+                    <a class="social-link" href="https://facebook.com/yourpage" target="_blank" rel="noopener noreferrer">FB</a>
+                    <a class="social-link" href="https://wa.me/621234567890" target="_blank" rel="noopener noreferrer">WA</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">© <span id="year">2025</span> UKM Kemasan. All rights reserved.</div>
+        </div>
+    </footer>
+</html>

@@ -1,0 +1,35 @@
+/* Contact page specific styles */
+
+.contact .lead{margin:6px 0 18px;color:var(--muted)}
+
+.logo{
+  color: #52c4db;
+}
+.contact-form{max-width:760px;margin:0 auto;display:grid;gap:14px}
+.field{display:flex;flex-direction:column;gap:8px}
+.field label{font-weight:700;color:#0f1724}
+
+.field input,.field textarea{
+  padding:10px 12px;border:1px solid rgb(15 23 36 / 8%);border-radius:8px;background:var(--surface);font-size:1rem;color:#0f1724;resize:vertical;
+}
+.field input:focus,.field textarea:focus{outline:3px solid rgb(var(--accent-rgb) 0.12);outline-offset:3px}
+
+.actions{display:flex;justify-content:flex-end}
+.actions .btn{padding:12px 20px}
+
+@media (max-width:700px){
+  .contact-form{padding:0 12px}
+  .actions{justify-content:center}
+}
+
+/* Social links styling */
+.contact-details .social-list{list-style:none;padding:0;margin:0;display:flex;gap:10px;flex-wrap:wrap}
+.social-link{display:inline-flex;align-items:center;gap:8px;padding:8px 10px;border-radius:10px;color:var(--muted);text-decoration:none;transition:background 140ms ease,color 140ms ease,transform 160ms ease}
+.social-icon{fill:currentcolor}
+.social-link .social-icon{width:20px;height:20px;flex-shrink:0;display:block;color:var(--muted)}
+.social-link:hover,.social-link:focus{background:rgb(var(--accent-rgb) 0.06);color:var(--accent-2);transform:translateY(-3px)}
+.social-link:focus{outline:3px solid rgb(var(--accent-rgb) 0.12);outline-offset:3px}
+
+@media (max-width:480px){
+  .contact-details .social-list{justify-content:center}
+}
