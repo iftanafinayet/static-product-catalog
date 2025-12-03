@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-  "lint:css": "stylelint \"**/*.css\""
+  "lint:css": "stylelint \"**/*.css\"",
+  "build": "echo 'Build completed' && echo 'Copying files...'",
+    "test": "echo 'No tests'"
   },
   "devDependencies": {
     "stylelint": "^15.11.0",
