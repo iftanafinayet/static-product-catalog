@@ -1,0 +1,18 @@
+name: Static Site CI
+
+on: [push]
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      
+      - name: Check required files
+        run: |
+          echo "Checking project structure..."
+          [ -f "index.html" ] && echo "✓ index.html exists" || echo "✗ Missing index.html"
+          [ -d "assets" ] && echo "✓ assets directory exists" || echo "⚠ No assets directory"
+          
+      - name: Count HTML files
+        run: find . -name "*.html" -type f | wc -l
